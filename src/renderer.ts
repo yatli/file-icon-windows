@@ -23,25 +23,37 @@ function saveBlob(blob: Blob, fileName: string) {
 
 async function main() {
 
-
     let suffixes = [
+        ".asp", ".aspx", "asmx", ".ascx", ".ashx",
+        ".awk", ".gawk", ".mawk", ".nawk", 
+        ".bat", ".cmd", ".sh", ".reg", ".com", ".msi",
+        ".bin", ".dat",
+        ".bison", ".l", ".y",
         ".c", ".c", ".cpp", ".h", ".hpp", ".cc", ".hh", ".in", ".cmake", "CMakeLists.txt", "Makefile", ".mk",
-        ".cs", ".fs", ".vb", ".rc", ".csproj", ".fsproj", ".vcxproj", ".sln", ".props", ".targets",
-        ".settings", ".config", ".reg", ".yml", 
-        ".scm", ".rkt", ".cl", ".el", ".lisp",
-        ".ml", ".hs",
-        ".ll", ".asm", ".o", ".s",
-        ".java", ".scala", ".php",
+        ".coq", 
+        ".cs", ".fs", ".vb", ".rc", ".csproj", ".fsproj", ".vcxproj", ".sln", ".props", ".targets", ".csx", ".fsx", ".nuspec",
+        ".css", ".html", ".htm", ".json", ".less", ".scss", ".styl",
+        ".csv", ".tsv", 
+        ".g", ".g4",
         ".ino",
-        ".rs",
-        ".ps1", ".psd1", ".psm1", 
-        ".bat", ".cmd", ".sh", 
-        ".py", ".pl", ".rb", ".vim", 
-        ".svg", ".png", ".jpg", ".bmp",
-        ".xml", ".xaml", ".xsd",
-        ".md", ".tex", ".rst",
-        ".css", ".html", ".ts", ".js", ".js.map", ".json", ".less",
-        ".db",
+        ".java", ".scala", ".php",
+        ".ll", ".asm", ".o", ".s",
+        ".md", ".rst", "README", ".asciidoc", "Doxyfile",
+        ".ml", ".hs",
+        ".ps1", ".psd1", ".psm1", ".ps1xml",
+        ".pub", ".key",
+        ".py", ".ipy", ".ipynb", ".pl", ".rb", 
+        ".rs", ".go", ".pas", ".vala", ".v", ".vhdl", 
+        ".scm", ".rkt", ".cl", ".el", ".lisp", ".clj", ".sexp",
+        ".settings", ".config", ".reg", ".yml", ".conf",
+        ".something_text",
+        ".sql", ".sparql",
+        ".svg", 
+        ".tex", ".cls", ".ltx", ".aux", ".sty", ".ps", ".cbx", ".bbx", ".bib", ".bst",
+        ".tmLanguage",
+        ".ts", ".js", ".js.map", ".coffee", ".re", ".jsx",
+        ".vim",
+        ".xml", ".xaml", ".xsd", ".gml", 
     ]
 
     let getFileName = function(x: string) {
@@ -78,4 +90,3 @@ async function main() {
 }
 
 document.addEventListener("DOMContentLoaded", main)
-

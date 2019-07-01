@@ -1,0 +1,1525 @@
+{ name: 'binary-icon', match: [ '.swp' ] }
+{ name: 'link-icon', match: [ '.lnk' ] }
+{ name: 'angular-icon', match: [ 'angular[^.]*\\.js' ] }
+{ name: 'ant-icon', match: [ 'ant\\.xml$', '\\.ant' ] }
+{ name: 'apache-icon', match: [ '(?:apache2?', 'httpd).conf' ] }
+{ name: 'apache-icon', match: [ '.vhost' ] }
+{ name: 'apache-icon', match: [ '.thrift' ] }
+{ name: 'appcelerator-icon', match: [ 'appcelerator\\.js' ] }
+{ name: 'appveyor-icon', match: [ 'appveyor\\.yml' ] }
+{ name: 'archlinux-icon', match: [ '\\.install' ] }
+{ name: 'archlinux-icon', match: [ '\\.SRCINFO' ] }
+{ name: 'archlinux-icon', match: [ 'pacman\\.conf' ] }
+{ name: 'archlinux-icon', match: [ 'pamac\\.conf' ] }
+{ name: 'archlinux-icon', match: [ 'PKGBUILD' ] }
+{ name: 'archlinux-icon', match: [ 'aourtrc' ] }
+{ name: 'backbone-icon',
+  match: [ 'backbone(?:[-.]min', 'dev)?\\.js' ] }
+{ name: 'boot-icon', match: [ 'Makefile\\.boot' ] }
+{ name: 'bootstrap-icon',
+  match: [ '(?:custom\\.)?bootstrap\\S*\\.js' ] }
+{ name: 'bootstrap-icon',
+  match: [ '(?:custom\\.)?bootstrap\\S*\\.css' ] }
+{ name: 'bootstrap-icon',
+  match: [ '(?:custom\\.)?bootstrap\\S*\\.less' ] }
+{ name: 'bootstrap-icon',
+  match: [ '(?:custom\\.)?bootstrap\\S*\\.scss' ] }
+{ name: 'bootstrap-icon',
+  match: [ '(?:custom\\.)?bootstrap\\S*\\.styl' ] }
+{ name: 'bower-icon',
+  match: [ '(?:\\.bowerrc', 'bower\\.json', 'Bowerfile)' ] }
+{ name: 'brakeman-icon', match: [ 'rakeman\\.yml' ] }
+{ name: 'brakeman-icon', match: [ 'brakeman\\.ignore' ] }
+{ name: 'broccoli-icon', match: [ 'Brocfile\\' ] }
+{ name: 'package-icon', match: [ 'argo\\.toml' ] }
+{ name: 'package-icon', match: [ 'argo\\.lock' ] }
+{ name: 'chai-icon',
+  match: [ 'chai\\.(?:[jt]sx?', 'es6?', 'coffee)' ] }
+{ name: 'chartjs-icon', match: [ 'Chart\\.js' ] }
+{ name: 'circleci-icon', match: [ 'circle\\.yml' ] }
+{ name: 'cc-icon', match: [ '.codeclimate\\.yml' ] }
+{ name: 'codecov-icon', match: [ 'codecov\\.ya?ml' ] }
+{ name: 'coffee-icon', match: [ '.coffee\\.ecr' ] }
+{ name: 'coffee-icon', match: [ '.coffee\\.erb' ] }
+{ name: 'compass-icon',
+  match: [ '_?(?:compass', 'lemonade)\\.scss' ] }
+{ name: 'composer-icon',
+  match: [ 'composer\\.(?:json', 'lock)' ] }
+{ name: 'composer-icon', match: [ 'composer\\.phar' ] }
+{ name: 'cordova-icon',
+  match: [ 'cordova(?:[^.]*\\.', '-(?:\\d\\.)+)js' ] }
+{ name: 'd3-icon', match: [ 'd3(?:\\.v\\d+)?[^.]*\\.js' ] }
+{ name: 'database-icon', match: [ 'METADATA\\.pb' ] }
+{ name: 'database-icon',
+  match:
+   [ '.git[\\/\\\\](?:.*[\\/\\\\])?(?:HEAD',
+     'ORIG_HEAD',
+     'packed-refs',
+     'logs[\\/\\\\](?:.+[\\/\\\\])?[^\\/\\\\]+)' ] }
+{ name: 'docker-icon',
+  match:
+   [ '(?:Dockerfile',
+     'docker-compose)',
+     '\\.docker(?:file',
+     'ignore)' ] }
+{ name: 'docker-icon', match: [ 'docker-sync\\.yml' ] }
+{ name: 'dojo-icon', match: [ 'dojo\\.js' ] }
+{ name: 'ember-icon',
+  match:
+   [ 'ember(?:\\.', '(?:-[^.]+)?-(?:\\d+\\.)+(?:debug\\.)?)js' ] }
+{ name: 'eslint-icon', match: [ '.eslint(?:cache', 'ignore)' ] }
+{ name: 'eslint-icon',
+  match: [ '.eslintrc(?:\\.(?:js', 'json', 'ya?ml))?' ] }
+{ name: 'extjs-icon', match: [ 'bExtjs(?:-ext)?\\.js' ] }
+{ name: 'fabfile-icon', match: [ 'fabfile\\.py' ] }
+{ name: 'fuelux-icon',
+  match: [ 'fuelux(?:\\.min)?\\.(?:css', 'js)' ] }
+{ name: 'gear-icon', match: [ '.indent\\.pro' ] }
+{ name: 'grunt-icon', match: [ 'runtfile\\.js' ] }
+{ name: 'grunt-icon', match: [ 'runtfile\\.coffee' ] }
+{ name: 'gulp-icon',
+  match: [ 'ulpfile\\.js$', 'gulpfile\\.babel\\.js' ] }
+{ name: 'gulp-icon', match: [ 'ulpfile\\.coffee' ] }
+{ name: 'html5-icon', match: [ '.html?\\.ecr' ] }
+{ name: 'html5-icon', match: [ '.(?:html?\\.erb', 'rhtml)' ] }
+{ name: 'ionic-icon', match: [ 'ionic\\.project' ] }
+{ name: 'js-icon', match: [ '.js\\.ecr' ] }
+{ name: 'js-icon', match: [ '.js\\.erb' ] }
+{ name: 'jquery-icon',
+  match:
+   [ 'jquery(?:[-.](?:min',
+     'latest',
+     '\\d\\.\\d+(?:\\.\\d+)?))*\\.(?:[jt]sx?',
+     'es6?',
+     'coffee',
+     'map)' ] }
+{ name: 'jqueryui-icon',
+  match:
+   [ 'jquery(?:[-_.](?:ui[-_.](?:custom',
+     'dialog-?\\w*)',
+     'effects)(?:\\.[^.]*)?',
+     '[-.]?ui(?:-\\d\\.\\d+(?:\\.\\d+)?)?(?:\\.\\w+)?)(?:[-_.]?min',
+     'dev)?\\.(?:[jt]sx?',
+     'es6?',
+     'coffee',
+     'map',
+     's?css',
+     'less',
+     'styl)' ] }
+{ name: 'karma-icon', match: [ 'karma\\.conf\\.js' ] }
+{ name: 'karma-icon', match: [ 'karma\\.conf\\.coffee' ] }
+{ name: 'knockout-icon',
+  match: [ 'knockout[-.](?:\\d+\\.){3}(?:debug\\.)?js' ] }
+{ name: 'leaflet-icon',
+  match:
+   [ 'leaflet\\.(?:draw-src',
+     'draw',
+     'spin',
+     'coordinates-(?:\\d+\\.)\\d+\\.\\d+\\.src)\\.(?:js',
+     'css)$',
+     '^wicket-leaflet\\.js' ] }
+{ name: 'lein-icon', match: [ 'roject\\.clj' ] }
+{ name: 'manpage-icon',
+  match: [ 'tmac\\.', '^(?:mmn', 'mmt)' ] }
+{ name: 'marko-icon', match: [ '.marko' ] }
+{ name: 'marko-icon', match: [ '.marko\\.js' ] }
+{ name: 'materialize-icon',
+  match: [ 'materialize(?:\\.min)?\\.(?:js', 'css)' ] }
+{ name: 'mathjax-icon', match: [ 'MathJax[^.]*\\.js' ] }
+{ name: 'mocha-icon',
+  match: [ 'mocha\\.(?:[jt]sx?', 'es6?', 'coffee)' ] }
+{ name: 'mocha-icon',
+  match: [ 'mocha\\.(?:s?css', 'less', 'styl)' ] }
+{ name: 'mocha-icon', match: [ 'ocha\\.opts' ] }
+{ name: 'modernizr-icon',
+  match:
+   [ 'modernizr(?:[-\\.]custom', '-\\d\\.\\d+)(?:\\.\\d+)?\\.js' ] }
+{ name: 'mootools-icon',
+  match: [ 'mootools[^.]*\\d+\\.\\d+(?:.\\d+)?[^.]*\\.js' ] }
+{ name: 'neko-icon', match: [ 'run\\.n' ] }
+{ name: 'newrelic-icon', match: [ 'newrelic\\.ym' ] }
+{ name: 'nginx-icon', match: [ 'nginx\\.conf' ] }
+{ name: 'shuriken-icon', match: [ '.ninja\\.d' ] }
+{ name: 'nodemon-icon',
+  match: [ 'nodemon\\.json$', '^\\.nodemonignore' ] }
+{ name: 'normalize-icon',
+  match: [ 'normalize\\.(?:css', 'less', 'scss', 'styl)' ] }
+{ name: 'npm-icon',
+  match:
+   [ '(?:package\\.json',
+     '\\.npmignore',
+     '\\.?npmrc',
+     'npm-debug\\.log',
+     'npm-shrinkwrap\\.json)' ] }
+{ name: 'postcss-icon', match: [ 'bpostcss\\.config\\.js' ] }
+{ name: 'protractor-icon', match: [ 'protractor\\.conf\\' ] }
+{ name: 'pug-icon', match: [ '\\.pug-lintr' ] }
+{ name: 'raphael-icon',
+  match: [ 'raphael(?:\\.min', '\\.no-deps)*\\.js' ] }
+{ name: 'react-icon', match: [ 'react(?:-[^.]*)?\\.js' ] }
+{ name: 'react-icon', match: [ '.react\\.js' ] }
+{ name: 'book-icon',
+  match:
+   [ 'README(?:\\b',
+     '_)',
+     '^(?:licen[sc]es?',
+     '(?:read',
+     'readme',
+     'click',
+     'delete',
+     'keep',
+     'test)\\.me)$',
+     '\\.(?:readme',
+     '1st)' ] }
+{ name: 'book-icon',
+  match:
+   [ '(?:notice',
+     'bugs',
+     'changes',
+     'change[-_]?log(?:[-._]?\\d+)?',
+     'contribute',
+     'contributing',
+     'contributors',
+     'copying',
+     'hacking',
+     'history',
+     'install',
+     'maintainers',
+     'manifest',
+     'more\\.stuff',
+     'projects',
+     'revision',
+     'terms',
+     'thanks)' ] }
+{ name: 'requirejs-icon',
+  match: [ 'require(?:[-.]min', 'dev)?\\.js' ] }
+{ name: 'clojure-icon', match: [ 'riemann\\.config' ] }
+{ name: 'rollup-icon', match: [ 'rollup\\.config\\' ] }
+{ name: 'ruby-icon', match: [ 'spec\\.rb' ] }
+{ name: 'scrutinizer-icon', match: [ '.scrutinizer\\.yml' ] }
+{ name: 'sencha-icon', match: [ 'sencha(?:\\.min)?\\.js' ] }
+{ name: 'snapsvg-icon',
+  match: [ 'snap\\.svg(?:[-.]min)?\\.js' ] }
+{ name: 'sourcemap-icon', match: [ '.css\\.map' ] }
+{ name: 'sourcemap-icon', match: [ '.js\\.map' ] }
+{ name: 'stylelint-icon',
+  match: [ '\\.stylelintrc(?:\\.', '$' ] }
+{ name: 'stylelint-icon', match: [ 'stylelint\\.config\\.js' ] }
+{ name: 'stylelint-icon', match: [ '.stylelintignore' ] }
+{ name: 'toc-icon', match: [ '.toc' ] }
+{ name: 'calc-icon', match: [ '.8x[pk](?:\\.txt)?' ] }
+{ name: 'travis-icon', match: [ '\\.travi' ] }
+{ name: 'typedoc-icon', match: [ 'typedoc\\.json' ] }
+{ name: 'typings-icon', match: [ 'typings\\.json' ] }
+{ name: 'uikit-icon', match: [ 'uikit(?:\\.min)?\\.js' ] }
+{ name: 'webpack-icon',
+  match: [ 'ebpack\\.config\\.', '^webpackfile\\.js' ] }
+{ name: 'wercker-icon', match: [ 'wercker\\.ya?ml' ] }
+{ name: 'yarn-icon', match: [ 'yarn\\.lock' ] }
+{ name: 'yeoman-icon', match: [ '.yo-rc\\.json' ] }
+{ name: 'yui-icon', match: [ '(?:yahoo-', 'yui)[^.]*\\.js' ] }
+{ name: 'emacs-icon', match: [ '.gnus' ] }
+{ name: 'emacs-icon', match: [ '.viper' ] }
+{ name: 'emacs-icon', match: [ 'Cask' ] }
+{ name: 'emacs-icon', match: [ 'Project\\.ede' ] }
+{ name: '_1c-icon', match: [ '.bsl' ] }
+{ name: '_1c-icon', match: [ '.sdbl' ] }
+{ name: '_1c-icon', match: [ '.os' ] }
+{ name: '_1c-alt-icon', match: [ '.mdo' ] }
+{ name: 'abap-icon', match: [ '.abap' ] }
+{ name: 'as-icon', match: [ '.swf' ] }
+{ name: 'as-icon', match: [ '.as' ] }
+{ name: 'as-icon', match: [ '.jsfl' ] }
+{ name: 'as-icon', match: [ '.swc' ] }
+{ name: 'ada-icon', match: [ '.(?:ada', 'adb', 'ads)' ] }
+{ name: 'ae-icon', match: [ '.aep' ] }
+{ name: 'ae-icon', match: [ '.aet' ] }
+{ name: 'ai-icon', match: [ '.ai' ] }
+{ name: 'ai-icon', match: [ '.ait' ] }
+{ name: 'indesign-icon', match: [ '.indd$', '\\.idml' ] }
+{ name: 'indesign-icon', match: [ '.indl' ] }
+{ name: 'indesign-icon', match: [ '.indt$', '\\.inx' ] }
+{ name: 'indesign-icon', match: [ '.indb' ] }
+{ name: 'psd-icon', match: [ '.psd' ] }
+{ name: 'psd-icon', match: [ '.psb' ] }
+{ name: 'premiere-icon', match: [ '.prproj' ] }
+{ name: 'premiere-icon', match: [ '.prel' ] }
+{ name: 'premiere-icon', match: [ '.psq' ] }
+{ name: 'alloy-icon', match: [ '.als' ] }
+{ name: 'alpine-icon', match: [ '?:\\.', '^)APKBUILD' ] }
+{ name: 'ampl-icon', match: [ '.ampl' ] }
+{ name: 'sun-icon', match: [ '.ansiweatherrc' ] }
+{ name: 'antlr-icon', match: [ '.g' ] }
+{ name: 'antlr-icon', match: [ '.g4' ] }
+{ name: 'apache-icon', match: [ '.apacheconf' ] }
+{ name: 'apache-icon', match: [ 'pache2[\\\\\\/]magic' ] }
+{ name: 'api-icon', match: [ '.apib' ] }
+{ name: 'apl-icon', match: [ '.apl' ] }
+{ name: 'apl-icon', match: [ '.apl\\.history' ] }
+{ name: 'apple-icon', match: [ '.(?:applescript', 'scpt)' ] }
+{ name: 'arc-icon', match: [ '.arc' ] }
+{ name: 'arduino-icon', match: [ '.ino' ] }
+{ name: 'asciidoc-icon',
+  match: [ '.(?:ad', 'adoc', 'asc', 'asciidoc)' ] }
+{ name: 'asp-icon', match: [ '.asp' ] }
+{ name: 'asp-icon', match: [ '.asax' ] }
+{ name: 'asp-icon', match: [ '.ascx' ] }
+{ name: 'asp-icon', match: [ '.ashx' ] }
+{ name: 'asp-icon', match: [ '.asmx' ] }
+{ name: 'asp-icon', match: [ '.aspx' ] }
+{ name: 'asp-icon', match: [ '.axd' ] }
+{ name: 'eclipse-icon', match: [ '.aj' ] }
+{ name: 'binary-icon',
+  match:
+   [ '.(?:l?a',
+     '[ls]?o',
+     'out',
+     's',
+     'a51',
+     'n?asm',
+     'axf',
+     'elf',
+     'prx',
+     'puff',
+     'was[mt]',
+     'z80)$',
+     '\\.rpy[bc]' ] }
+{ name: 'binary-icon', match: [ '.agc$', '\\.d-objdump' ] }
+{ name: 'binary-icon', match: [ '.ko' ] }
+{ name: 'binary-icon', match: [ '.lst' ] }
+{ name: 'binary-icon',
+  match:
+   [ '.(?:(?:c(?:[+px]{2}?)?-?)?objdump',
+     'bsdiff',
+     'bin',
+     'dat',
+     'pak',
+     'pdb)' ] }
+{ name: 'binary-icon', match: [ '.gcode', '\\.gc' ] }
+{ name: 'binary-icon', match: [ '.py[co]' ] }
+{ name: 'binary-icon', match: [ '.DS_Store' ] }
+{ name: 'ats-icon', match: [ '.dats' ] }
+{ name: 'ats-icon', match: [ '.hats' ] }
+{ name: 'ats-icon', match: [ '.sats' ] }
+{ name: 'audacity-icon', match: [ '.aup' ] }
+{ name: 'audio-icon', match: [ '.mp3' ] }
+{ name: 'audio-icon', match: [ '.wav' ] }
+{ name: 'audio-icon', match: [ '.(?:aac', 'ac3', 'm4p)' ] }
+{ name: 'audio-icon', match: [ '.aif[fc]?' ] }
+{ name: 'audio-icon', match: [ '.au' ] }
+{ name: 'audio-icon', match: [ '.flac' ] }
+{ name: 'audio-icon', match: [ '.f4[ab]' ] }
+{ name: 'audio-icon', match: [ '.m4a' ] }
+{ name: 'audio-icon', match: [ '.(?:mpc', 'mp\\+)' ] }
+{ name: 'audio-icon', match: [ '.oga' ] }
+{ name: 'audio-icon', match: [ '.opus' ] }
+{ name: 'audio-icon', match: [ '.r[am]' ] }
+{ name: 'audio-icon', match: [ '.wma' ] }
+{ name: 'augeas-icon', match: [ '.aug' ] }
+{ name: 'ahk-icon', match: [ '.ahk' ] }
+{ name: 'ahk-icon', match: [ '.ahkl' ] }
+{ name: 'autoit-icon', match: [ '.au3' ] }
+{ name: 'terminal-icon', match: [ '.awk' ] }
+{ name: 'terminal-icon', match: [ '.gawk' ] }
+{ name: 'terminal-icon', match: [ '.mawk' ] }
+{ name: 'terminal-icon', match: [ '.nawk' ] }
+{ name: 'terminal-icon', match: [ '.auk' ] }
+{ name: 'babel-icon',
+  match: [ '.(?:babelrc', 'languagebabel', 'babel)' ] }
+{ name: 'babel-icon', match: [ '.babelignore' ] }
+{ name: 'bibtex-icon', match: [ '.cbx' ] }
+{ name: 'bibtex-icon', match: [ '.bbx' ] }
+{ name: 'bibtex-icon', match: [ '.bib' ] }
+{ name: 'bibtex-icon', match: [ '.bst' ] }
+{ name: 'gnu-icon', match: [ '.bison' ] }
+{ name: 'blender-icon', match: [ '.blend' ] }
+{ name: 'blender-icon', match: [ '.blend\\d+' ] }
+{ name: 'blender-icon', match: [ '.bphys' ] }
+{ name: 'bluespec-icon', match: [ '.bsv' ] }
+{ name: 'boo-icon', match: [ '.boo' ] }
+{ name: 'boot-icon', match: [ '.boot' ] }
+{ name: 'brain-icon', match: [ '.bf?' ] }
+{ name: 'brew-icon', match: [ 'Brewfile' ] }
+{ name: 'bro-icon', match: [ '.bro' ] }
+{ name: 'byond-icon', match: [ '.dm' ] }
+{ name: 'c-icon', match: [ '.c' ] }
+{ name: 'c-icon', match: [ '.h$', '\\.cats' ] }
+{ name: 'c-icon', match: [ '.idc' ] }
+{ name: 'c-icon', match: [ '.w' ] }
+{ name: 'c-icon', match: [ '.nc' ] }
+{ name: 'c-icon', match: [ '.upc' ] }
+{ name: 'csharp-icon', match: [ '.cs' ] }
+{ name: 'csscript-icon', match: [ '.csx' ] }
+{ name: 'cpp-icon', match: [ '.c[+px]{2}$', '\\.cc' ] }
+{ name: 'cpp-icon', match: [ '.h[+px]{2}' ] }
+{ name: 'cpp-icon', match: [ '.[it]pp' ] }
+{ name: 'cpp-icon', match: [ '.(?:tcc', 'inl)' ] }
+{ name: 'cabal-icon', match: [ '.cabal' ] }
+{ name: 'cake-icon', match: [ '.cake' ] }
+{ name: 'cakefile-icon', match: [ 'Cakefile' ] }
+{ name: 'cakephp-icon', match: [ '.ctp' ] }
+{ name: 'ceylon-icon', match: [ '.ceylon' ] }
+{ name: 'chapel-icon', match: [ '.chpl' ] }
+{ name: 'chrome-icon', match: [ '.crx' ] }
+{ name: 'chuck-icon', match: [ '.ck' ] }
+{ name: 'cirru-icon', match: [ '.cirru' ] }
+{ name: 'clarion-icon', match: [ '.clw' ] }
+{ name: 'clean-icon', match: [ '.icl' ] }
+{ name: 'clean-icon', match: [ '.dcl' ] }
+{ name: 'clean-icon', match: [ '.abc' ] }
+{ name: 'click-icon', match: [ '.click' ] }
+{ name: 'clips-icon', match: [ '.clp' ] }
+{ name: 'clojure-icon', match: [ '.clj' ] }
+{ name: 'clojure-icon', match: [ '.cl2' ] }
+{ name: 'clojure-icon', match: [ '.cljc' ] }
+{ name: 'clojure-icon', match: [ '.cljx$', '\\.hic' ] }
+{ name: 'cljs-icon', match: [ '.cljs(?:\\.hl', 'cm)?' ] }
+{ name: 'cmake-icon', match: [ '.cmake' ] }
+{ name: 'cmake-icon', match: [ 'CMakeLists\\.txt' ] }
+{ name: 'coffee-icon', match: [ '.coffee' ] }
+{ name: 'coffee-icon', match: [ '.cjsx' ] }
+{ name: 'coffee-icon', match: [ '.litcoffee' ] }
+{ name: 'coffee-icon', match: [ '.iced' ] }
+{ name: 'cf-icon', match: [ '.cfc' ] }
+{ name: 'cf-icon', match: [ '.cfml?' ] }
+{ name: 'khronos-icon', match: [ '.dae' ] }
+{ name: 'cl-icon', match: [ '.cl' ] }
+{ name: 'cp-icon', match: [ '.cp' ] }
+{ name: 'cp-icon', match: [ '.cps' ] }
+{ name: 'zip-icon', match: [ '.(?:zip', 'z', 'xz)' ] }
+{ name: 'zip-icon', match: [ '.rar' ] }
+{ name: 'zip-icon', match: [ '.t?gz$', '\\.tar$', '\\.whl' ] }
+{ name: 'zip-icon',
+  match: [ '.(?:lzo?', 'lzma', 'tlz', 'tar\\.lzma)' ] }
+{ name: 'zip-icon', match: [ '.7z' ] }
+{ name: 'zip-icon', match: [ '.apk$', '\\.gem' ] }
+{ name: 'zip-icon', match: [ '.bz2' ] }
+{ name: 'zip-icon', match: [ '.iso' ] }
+{ name: 'zip-icon', match: [ '.xpi' ] }
+{ name: 'zip-icon', match: [ '.epub' ] }
+{ name: 'zip-icon', match: [ '.jar' ] }
+{ name: 'zip-icon', match: [ '.war' ] }
+{ name: 'zip-icon', match: [ '.xar' ] }
+{ name: 'zip-icon', match: [ '.egg' ] }
+{ name: 'config-icon',
+  match:
+   [ '.(?:ini', 'desktop', 'directory', 'cfg', 'conf', 'prefs)' ] }
+{ name: 'config-icon', match: [ '.properties' ] }
+{ name: 'config-icon', match: [ '.toml$', '\\.opts' ] }
+{ name: 'config-icon', match: [ '.ld' ] }
+{ name: 'config-icon', match: [ '.lds$', '\\.reek' ] }
+{ name: 'config-icon', match: [ '.terminal' ] }
+{ name: 'config-icon', match: [ 'ld\\.script' ] }
+{ name: 'config-icon',
+  match: [ '.git[\\/\\\\](?:config', 'info[\\/\\\\]\\w+)' ] }
+{ name: 'config-icon',
+  match:
+   [ '\\/(?:private\\/)?etc\\/(?:[^\\/]+\\/)*[^\\/]*\\.(?:cf',
+     'conf',
+     'ini)(?:\\.default)?' ] }
+{ name: 'config-icon',
+  match:
+   [ '\\/(?:private\\/)?etc\\/(?:aliases',
+     'auto_(?:home',
+     'master)',
+     'ftpusers',
+     'group',
+     'gettytab',
+     'hosts(?:\\.equiv)?',
+     'manpaths',
+     'networks',
+     'paths',
+     'protocols',
+     'services',
+     'shells',
+     'sudoers',
+     'ttys)' ] }
+{ name: 'coq-icon', match: [ '.coq' ] }
+{ name: 'creole-icon', match: [ '.creole' ] }
+{ name: 'crystal-icon', match: [ '.e?cr' ] }
+{ name: 'csound-icon', match: [ '.orc' ] }
+{ name: 'csound-icon', match: [ '.udo' ] }
+{ name: 'csound-icon', match: [ '.csd' ] }
+{ name: 'csound-icon', match: [ '.sco' ] }
+{ name: 'css3-icon', match: [ '.css' ] }
+{ name: 'css3-icon', match: [ '.less' ] }
+{ name: 'cucumber-icon', match: [ '.feature' ] }
+{ name: 'nvidia-icon', match: [ '.cu' ] }
+{ name: 'nvidia-icon', match: [ '.cuh' ] }
+{ name: 'cython-icon', match: [ '.pyx' ] }
+{ name: 'cython-icon', match: [ '.pxd' ] }
+{ name: 'cython-icon', match: [ '.pxi' ] }
+{ name: 'dlang-icon', match: [ '.di?' ] }
+{ name: 'yang-icon', match: [ '.dnh' ] }
+{ name: 'darcs-icon', match: [ '.d(?:arcs)?patch' ] }
+{ name: 'dart-icon', match: [ '.dart' ] }
+{ name: 'dashboard-icon', match: [ '.s[kl]im' ] }
+{ name: 'dashboard-icon', match: [ '.cpuprofile' ] }
+{ name: 'database-icon',
+  match: [ '.(?:h', 'geo', 'topo)?json' ] }
+{ name: 'database-icon', match: [ '.ya?ml' ] }
+{ name: 'database-icon',
+  match: [ '.cson$', '\\.ston$', '^mime\\.types' ] }
+{ name: 'database-icon', match: [ '.json5' ] }
+{ name: 'database-icon', match: [ '.http$', '\\.pot?' ] }
+{ name: 'database-icon', match: [ '.ndjson$', '\\.pytb' ] }
+{ name: 'database-icon', match: [ '.fea' ] }
+{ name: 'database-icon', match: [ '.json\\.eex$', '\\.edn' ] }
+{ name: 'database-icon', match: [ '.proto' ] }
+{ name: 'database-icon', match: [ '.pydeps$', '\\.rviz' ] }
+{ name: 'database-icon', match: [ '.eam\\.fs' ] }
+{ name: 'database-icon', match: [ '.qml' ] }
+{ name: 'database-icon', match: [ '.qbs' ] }
+{ name: 'database-icon', match: [ '.ttl' ] }
+{ name: 'database-icon', match: [ '.syntax' ] }
+{ name: 'database-icon',
+  match:
+   [ '\\/\\\\](?:magic[\\/\\\\]Magdir',
+     'file[\\/\\\\]magic)[\\/\\\\][-.\\w]+$',
+     'lib[\\\\\\/]icons[\\\\\\/]\\.icondb\\.js' ] }
+{ name: 'dbase-icon', match: [ '.dbf' ] }
+{ name: 'debian-icon', match: [ '.deb' ] }
+{ name: 'debian-icon', match: [ 'control' ] }
+{ name: 'debian-icon', match: [ 'rules' ] }
+{ name: 'diff-icon', match: [ '.diff' ] }
+{ name: 'earth-icon', match: [ '.zone' ] }
+{ name: 'earth-icon', match: [ '.arpa' ] }
+{ name: 'earth-icon', match: [ 'CNAME' ] }
+{ name: 'doxygen-icon', match: [ 'Doxyfile' ] }
+{ name: 'dyalog-icon', match: [ '.dyalog' ] }
+{ name: 'dylib-icon', match: [ '.(?:dylib', 'bundle)' ] }
+{ name: 'e-icon', match: [ '.E' ] }
+{ name: 'eagle-icon', match: [ '.sch' ] }
+{ name: 'eagle-icon', match: [ '.brd' ] }
+{ name: 'ec-icon', match: [ '.ec' ] }
+{ name: 'ec-icon', match: [ '.eh' ] }
+{ name: 'ecere-icon', match: [ '.epj' ] }
+{ name: 'eclipse-icon', match: [ '.c?project' ] }
+{ name: 'eclipse-icon', match: [ '.classpath' ] }
+{ name: 'editorconfig-icon', match: [ '.editorconfig' ] }
+{ name: 'eiffel-icon', match: [ '.e' ] }
+{ name: 'elixir-icon', match: [ '.ex' ] }
+{ name: 'elixir-icon', match: [ '.(?:exs', 'eex)' ] }
+{ name: 'elixir-icon', match: [ 'ix\\.exs?' ] }
+{ name: 'elm-icon', match: [ '.elm' ] }
+{ name: 'emacs-icon',
+  match:
+   [ '?:^',
+     '\\.)(?:el',
+     '_?emacs',
+     'spacemacs',
+     'emacs\\.desktop',
+     'abbrev[-_]defs)' ] }
+{ name: 'emacs-icon', match: [ '?:^', '\\.)(?:elc', 'eld)' ] }
+{ name: 'at-icon', match: [ '(?:authors', 'owners)' ] }
+{ name: 'em-icon', match: [ '.emberscript' ] }
+{ name: 'mustache-icon', match: [ '.em(?:blem)?' ] }
+{ name: 'eq-icon', match: [ '.eq' ] }
+{ name: 'erlang-icon', match: [ '.erl' ] }
+{ name: 'erlang-icon', match: [ '.beam' ] }
+{ name: 'erlang-icon', match: [ '.hrl' ] }
+{ name: 'erlang-icon', match: [ '.xrl' ] }
+{ name: 'erlang-icon', match: [ '.yrl' ] }
+{ name: 'erlang-icon', match: [ '.app\\.src' ] }
+{ name: 'factor-icon', match: [ '.factor' ] }
+{ name: 'factor-icon', match: [ '.factor-rc' ] }
+{ name: 'factor-icon', match: [ '.factor-boot-rc' ] }
+{ name: 'fancy-icon', match: [ '.fy' ] }
+{ name: 'fancy-icon', match: [ '.fancypack' ] }
+{ name: 'fancy-icon', match: [ 'Fakefile' ] }
+{ name: 'fantom-icon', match: [ '.fan' ] }
+{ name: 'fbx-icon', match: [ '.fbx' ] }
+{ name: 'finder-icon', match: [ 'Icon\\r' ] }
+{ name: 'finder-icon', match: [ '.rsrc' ] }
+{ name: 'flow-icon', match: [ '.(?:flowconfig', 'js\\.flow)' ] }
+{ name: 'flux-icon', match: [ '.fx' ] }
+{ name: 'flux-icon', match: [ '.flux' ] }
+{ name: 'font-icon', match: [ '.woff2' ] }
+{ name: 'font-icon', match: [ '.woff' ] }
+{ name: 'font-icon', match: [ '.eot' ] }
+{ name: 'font-icon', match: [ '.ttc' ] }
+{ name: 'font-icon', match: [ '.ttf' ] }
+{ name: 'font-icon', match: [ '.otf' ] }
+{ name: 'font-icon', match: [ '.pfb' ] }
+{ name: 'font-icon', match: [ '.pfm' ] }
+{ name: 'ff-icon', match: [ '.pe' ] }
+{ name: 'ff-icon', match: [ '.sfd' ] }
+{ name: 'fortran-icon', match: [ '.f' ] }
+{ name: 'fortran-icon', match: [ '.f90' ] }
+{ name: 'fortran-icon', match: [ '.f03' ] }
+{ name: 'fortran-icon', match: [ '.f08' ] }
+{ name: 'fortran-icon', match: [ '.f77' ] }
+{ name: 'fortran-icon', match: [ '.f95' ] }
+{ name: 'fortran-icon', match: [ '.for' ] }
+{ name: 'fortran-icon', match: [ '.fpp' ] }
+{ name: 'freemarker-icon', match: [ '.ftl' ] }
+{ name: 'frege-icon', match: [ '.fr' ] }
+{ name: 'fsharp-icon', match: [ '.fs[xi]?' ] }
+{ name: 'gml-icon', match: [ '.gml' ] }
+{ name: 'gams-icon', match: [ '.gms' ] }
+{ name: 'gap-icon', match: [ '.gap' ] }
+{ name: 'gap-icon', match: [ '.gi' ] }
+{ name: 'gap-icon', match: [ '.tst' ] }
+{ name: 'gdb-icon', match: [ '.gdb' ] }
+{ name: 'gdb-icon', match: [ 'dbinit' ] }
+{ name: 'godot-icon', match: [ '.gd' ] }
+{ name: 'gear-icon', match: [ '\\.htaccess$', '\\.yardopts' ] }
+{ name: 'gear-icon', match: [ '\\.htpasswd' ] }
+{ name: 'gear-icon', match: [ '\\.env\\.', '\\.pairs' ] }
+{ name: 'gear-icon', match: [ '\\.lesshintrc' ] }
+{ name: 'gear-icon',
+  match:
+   [ '\\.csscomb\\.json$',
+     '\\.csslintrc$',
+     '\\.jsbeautifyrc$',
+     '\\.jshintrc$',
+     '\\.jscsrc' ] }
+{ name: 'gear-icon',
+  match: [ '.coffeelintignore$', '\\.codoopts' ] }
+{ name: 'gear-icon', match: [ '.module' ] }
+{ name: 'gear-icon',
+  match: [ '.arcconfig$', '\\.python-version' ] }
+{ name: 'gear-icon', match: [ '.lintstagedrc' ] }
+{ name: 'gears-icon', match: [ '.dll' ] }
+{ name: 'code-icon',
+  match:
+   [ '.xml$',
+     '\\.config$',
+     '\\.4th$',
+     '\\.cocci$',
+     '\\.dyl$',
+     '\\.dylan$',
+     '\\.ecl$',
+     '\\.forth$',
+     '\\.launch$',
+     '\\.manifest$',
+     '\\.menu$',
+     '\\.srdf$',
+     '\\.st$',
+     '\\.ui$',
+     '\\.wsf$',
+     '\\.x3d$',
+     '\\.xaml' ] }
+{ name: 'code-icon',
+  match:
+   [ '.rdf$',
+     '\\.capnp$',
+     '\\.dotsettings$',
+     '\\.flex$',
+     '\\.fsh$',
+     '\\.fsproj$',
+     '\\.prw$',
+     '\\.xproj' ] }
+{ name: 'code-icon', match: [ '_service' ] }
+{ name: 'code-icon', match: [ 'configure\\.ac$', '\\.ML' ] }
+{ name: 'code-icon', match: [ 'Settings\\.StyleCop' ] }
+{ name: 'code-icon',
+  match:
+   [ '.abnf$', '\\.ditaval$', '\\.storyboard$', '\\.xmi$', '\\.yacc' ] }
+{ name: 'code-icon',
+  match: [ '.aepx$', '\\.dita$', '\\.grace$', '\\.lid$', '\\.nproj' ] }
+{ name: 'code-icon',
+  match: [ '.agda$', '\\.plist$', '\\.wisp$', '\\.xlf$', '\\.xslt' ] }
+{ name: 'code-icon',
+  match:
+   [ '.appxmanifest$', '\\.befunge$', '\\.fun$', '\\.muf$', '\\.xul' ] }
+{ name: 'code-icon',
+  match:
+   [ '.ash$',
+     '\\.asn1?$',
+     '\\.lagda$',
+     '\\.lex$',
+     '\\.props$',
+     '\\.resx$',
+     '\\.smt2$',
+     '\\.vsh$',
+     '\\.xsl$',
+     '\\.yy' ] }
+{ name: 'code-icon',
+  match:
+   [ '.axml$',
+     '\\.bmx$',
+     '\\.brs$',
+     '\\.ccxml$',
+     '\\.clixml$',
+     '\\.fth$',
+     '\\.intr$',
+     '\\.mdpolicy$',
+     '\\.mtml$',
+     '\\.myt$',
+     '\\.xsd' ] }
+{ name: 'code-icon',
+  match: [ '.bnf$', '\\.cbl$', '\\.cob$', '\\.cobol$', '\\.fxml' ] }
+{ name: 'code-icon', match: [ '.ccp$', '\\.cpy$', '\\.mxml' ] }
+{ name: 'code-icon',
+  match:
+   [ '.ch$',
+     '\\.cw$',
+     '\\.ebnf$',
+     '\\.iml$',
+     '\\.jflex$',
+     '\\.m4$',
+     '\\.mask$',
+     '\\.mumps$',
+     '\\.prg$',
+     '\\.pt$',
+     '\\.rl$',
+     '\\.sml$',
+     '\\.targets$',
+     '\\.webidl$',
+     '\\.wsdl$',
+     '\\.xacro$',
+     '\\.xliff' ] }
+{ name: 'code-icon', match: [ '.ct$', '\\.zcml' ] }
+{ name: 'code-icon',
+  match:
+   [ '.cy$', '\\.eclxml$', '\\.ivy$', '\\.sed$', '\\.tml$', '\\.y' ] }
+{ name: 'code-icon',
+  match:
+   [ '.ditamap$',
+     '\\.frt$',
+     '\\.lp$',
+     '\\.omgrofl$',
+     '\\.osm$',
+     '\\.wxs$',
+     '\\.xib' ] }
+{ name: 'code-icon',
+  match: [ '.filters$', '\\.lol$', '\\.pig' ] }
+{ name: 'code-icon', match: [ '.grxml$', '\\.urdf' ] }
+{ name: 'code-icon', match: [ '.jelly' ] }
+{ name: 'code-icon',
+  match: [ '.jsproj$', '\\.ohm$', '\\.sgml?' ] }
+{ name: 'code-icon', match: [ '.mq[45h]' ] }
+{ name: 'code-icon', match: [ '.odd' ] }
+{ name: 'code-icon', match: [ '.psc1$', '\\.smt' ] }
+{ name: 'code-icon', match: [ '.scxml' ] }
+{ name: 'code-icon', match: [ '.sig$', '\\.wxl' ] }
+{ name: 'code-icon', match: [ '.ux$', '\\.wxi' ] }
+{ name: 'code-icon', match: [ '.vxml' ] }
+{ name: 'genshi-icon', match: [ '.kid' ] }
+{ name: 'gentoo-icon', match: [ '.ebuild' ] }
+{ name: 'gentoo-icon', match: [ '.eclass' ] }
+{ name: 'git-icon',
+  match: [ '\\.git', '^\\.keep$', '\\.mailmap' ] }
+{ name: 'git-commit-icon', match: [ 'COMMIT_EDITMSG' ] }
+{ name: 'git-merge-icon',
+  match: [ 'MERGE_(?:HEAD', 'MODE', 'MSG)' ] }
+{ name: 'glade-icon', match: [ '.glade' ] }
+{ name: 'pointwise-icon', match: [ '.glf' ] }
+{ name: 'glyphs-icon', match: [ '.glyphs' ] }
+{ name: 'gn-icon', match: [ '.gn' ] }
+{ name: 'gn-icon', match: [ '.gni' ] }
+{ name: 'gnu-icon', match: [ '.(?:gnu', 'gplv[23])' ] }
+{ name: 'graph-icon', match: [ '.(?:gp', 'plo?t', 'gnuplot)' ] }
+{ name: 'go-icon', match: [ '.go' ] }
+{ name: 'golo-icon', match: [ '.golo' ] }
+{ name: 'gosu-icon', match: [ '.gs' ] }
+{ name: 'gosu-icon', match: [ '.gst' ] }
+{ name: 'gosu-icon', match: [ '.gsx' ] }
+{ name: 'gosu-icon', match: [ '.vark' ] }
+{ name: 'gradle-icon', match: [ '.gradle' ] }
+{ name: 'gradle-icon', match: [ 'radlew' ] }
+{ name: 'gf-icon', match: [ '.gf' ] }
+{ name: 'graphql-icon', match: [ '.graphql' ] }
+{ name: 'graphql-icon', match: [ '.gql' ] }
+{ name: 'graphviz-icon', match: [ '.gv' ] }
+{ name: 'graphviz-icon', match: [ '.dot' ] }
+{ name: 'groovy-icon',
+  match: [ '.(?:groovy', 'grt', 'gtpl', 'gsp', 'gvy)' ] }
+{ name: 'hack-icon', match: [ '.hh' ] }
+{ name: 'haml-icon', match: [ '.haml' ] }
+{ name: 'haml-icon', match: [ '.hamlc' ] }
+{ name: 'harbour-icon', match: [ '.hb' ] }
+{ name: 'hashicorp-icon', match: [ '.hcl' ] }
+{ name: 'haskell-icon', match: [ '.hs' ] }
+{ name: 'haskell-icon', match: [ '.hsc' ] }
+{ name: 'haskell-icon', match: [ '.c2hs' ] }
+{ name: 'haskell-icon', match: [ '.lhs' ] }
+{ name: 'haxe-icon', match: [ '.hx(?:[sm]l', ')?' ] }
+{ name: 'heroku-icon', match: [ 'Procfile' ] }
+{ name: 'heroku-icon', match: [ '.buildpacks' ] }
+{ name: 'heroku-icon', match: [ '\\.vendor_urls' ] }
+{ name: 'html5-icon', match: [ '.x?html?' ] }
+{ name: 'html5-icon', match: [ '.cshtml$', '\\.latte' ] }
+{ name: 'html5-icon', match: [ '.ejs$', '\\.kit$', '\\.swig' ] }
+{ name: 'html5-icon', match: [ '.gohtml$', '\\.phtml' ] }
+{ name: 'html5-icon', match: [ '.html\\.eex$', '\\.jsp' ] }
+{ name: 'html5-icon', match: [ '.shtml' ] }
+{ name: 'html5-icon', match: [ '.scaml' ] }
+{ name: 'html5-icon', match: [ '.vash' ] }
+{ name: 'html5-icon', match: [ '.dtml' ] }
+{ name: 'hy-icon', match: [ '.hy' ] }
+{ name: 'idl-icon', match: [ '.dlm' ] }
+{ name: 'idris-icon', match: [ '.idr' ] }
+{ name: 'idris-icon', match: [ '.lidr' ] }
+{ name: 'igorpro-icon', match: [ '.ipf' ] }
+{ name: 'image-icon', match: [ '.a?png$', '\\.svgz' ] }
+{ name: 'image-icon', match: [ '.gif$', '\\.ora$', '\\.sgi' ] }
+{ name: 'image-icon', match: [ '.jpg' ] }
+{ name: 'image-icon', match: [ '.ico' ] }
+{ name: 'image-icon',
+  match:
+   [ '.webp$',
+     '\\.iff$',
+     '\\.lbm$',
+     '\\.liff$',
+     '\\.nrrd$',
+     '\\.pcx$',
+     '\\.vsdx?' ] }
+{ name: 'image-icon', match: [ '.bmp' ] }
+{ name: 'image-icon', match: [ '.bpg' ] }
+{ name: 'image-icon', match: [ '.cin' ] }
+{ name: 'image-icon', match: [ '.cd5' ] }
+{ name: 'image-icon', match: [ '.cpc' ] }
+{ name: 'image-icon', match: [ '.cr2' ] }
+{ name: 'image-icon', match: [ '.dcm$', '\\.mpo$', '\\.pbm' ] }
+{ name: 'image-icon', match: [ '.dds' ] }
+{ name: 'image-icon', match: [ '.djvu?$', '\\.pxr' ] }
+{ name: 'image-icon', match: [ '.dpx$', '\\.raw' ] }
+{ name: 'image-icon', match: [ '.ecw$', '\\.sct' ] }
+{ name: 'image-icon', match: [ '.exr' ] }
+{ name: 'image-icon', match: [ '.fits?$', '\\.fts' ] }
+{ name: 'image-icon',
+  match:
+   [ '.flif$', '\\.hdp$', '\\.heic$', '\\.heif$', '\\.jxr$', '\\.wdp' ] }
+{ name: 'image-icon', match: [ '.hdr' ] }
+{ name: 'image-icon', match: [ '.icns' ] }
+{ name: 'image-icon', match: [ '.(?:jp[f2xm]', 'j2c', 'mj2)' ] }
+{ name: 'image-icon', match: [ '.jps' ] }
+{ name: 'image-icon', match: [ '.mng' ] }
+{ name: 'image-icon', match: [ '.pgf' ] }
+{ name: 'image-icon', match: [ '.pict' ] }
+{ name: 'image-icon', match: [ '.tga' ] }
+{ name: 'image-icon', match: [ '.tiff?' ] }
+{ name: 'image-icon', match: [ '.wbm' ] }
+{ name: 'inform7-icon', match: [ '.ni' ] }
+{ name: 'inform7-icon', match: [ '.i7x' ] }
+{ name: 'inno-icon', match: [ '.iss' ] }
+{ name: 'io-icon', match: [ '.io' ] }
+{ name: 'ioke-icon', match: [ '.ik' ] }
+{ name: 'isabelle-icon', match: [ '.thy' ] }
+{ name: 'isabelle-icon', match: [ 'ROOT' ] }
+{ name: 'j-icon', match: [ '.ijs' ] }
+{ name: 'jade-icon', match: [ '.jade' ] }
+{ name: 'jake-icon', match: [ 'Jakefile' ] }
+{ name: 'jake-icon', match: [ '.jake' ] }
+{ name: 'java-icon', match: [ '.java' ] }
+{ name: 'js-icon', match: [ '.js$', '\\.es6$', '\\.es' ] }
+{ name: 'js-icon', match: [ '._js' ] }
+{ name: 'js-icon', match: [ '.jsb$', '\\.dust' ] }
+{ name: 'js-icon', match: [ '.jsm$', '\\.mjs$', '\\.xsjslib' ] }
+{ name: 'js-icon', match: [ '.jss' ] }
+{ name: 'js-icon', match: [ '.sjs' ] }
+{ name: 'js-icon', match: [ '.ssjs' ] }
+{ name: 'js-icon', match: [ '.xsjs' ] }
+{ name: 'jenkins-icon', match: [ 'Jenkinsfile' ] }
+{ name: 'jinja-icon', match: [ '.jinja' ] }
+{ name: 'jinja-icon', match: [ '.jinja2' ] }
+{ name: 'jsonld-icon', match: [ '.jsonld' ] }
+{ name: 'sql-icon', match: [ '.jq' ] }
+{ name: 'jsx-icon', match: [ '.jsx' ] }
+{ name: 'julia-icon', match: [ '.jl' ] }
+{ name: 'jupyter-icon', match: [ '.ipynb' ] }
+{ name: 'jupyter-icon', match: [ 'Notebook' ] }
+{ name: 'keynote-icon', match: [ '.keynote' ] }
+{ name: 'keynote-icon', match: [ '.knt' ] }
+{ name: 'kivy-icon', match: [ '.kv' ] }
+{ name: 'earth-icon', match: [ '.kml' ] }
+{ name: 'kotlin-icon', match: [ '.kt' ] }
+{ name: 'kotlin-icon', match: [ '.ktm' ] }
+{ name: 'kotlin-icon', match: [ '.kts' ] }
+{ name: 'krl-icon', match: [ '.krl' ] }
+{ name: 'labview-icon', match: [ '.lvproj' ] }
+{ name: 'laravel-icon', match: [ '.blade\\.php' ] }
+{ name: 'lasso-icon', match: [ '.lasso$', '\\.las' ] }
+{ name: 'lasso-icon', match: [ '.lasso8' ] }
+{ name: 'lasso-icon', match: [ '.lasso9' ] }
+{ name: 'lasso-icon', match: [ '.ldml' ] }
+{ name: 'lean-icon', match: [ '.lean' ] }
+{ name: 'lean-icon', match: [ '.hlean' ] }
+{ name: 'lfe-icon', match: [ '.lfe' ] }
+{ name: 'lightwave-icon', match: [ '.lwo' ] }
+{ name: 'lightwave-icon', match: [ '.lws' ] }
+{ name: 'lisp-icon', match: [ '.lsp' ] }
+{ name: 'lisp-icon', match: [ '.lisp' ] }
+{ name: 'lisp-icon', match: [ '.l$', '\\.nl' ] }
+{ name: 'lisp-icon', match: [ '.ny$', '\\.sexp' ] }
+{ name: 'lisp-icon', match: [ '.podsl' ] }
+{ name: 'ls-icon', match: [ '.ls' ] }
+{ name: 'ls-icon', match: [ '._ls' ] }
+{ name: 'ls-icon', match: [ 'Slakefile' ] }
+{ name: 'llvm-icon', match: [ '.ll' ] }
+{ name: 'llvm-icon', match: [ '.clang-format' ] }
+{ name: 'mobile-icon', match: [ '.xm' ] }
+{ name: 'mobile-icon', match: [ '.xi' ] }
+{ name: 'logtalk-icon', match: [ '.(?:logtalk', 'lgt)' ] }
+{ name: 'lookml-icon', match: [ '.lookml' ] }
+{ name: 'lsl-icon', match: [ '.lsl' ] }
+{ name: 'lsl-icon', match: [ '.lslp' ] }
+{ name: 'lua-icon', match: [ '.lua' ] }
+{ name: 'lua-icon', match: [ '.pd_lua' ] }
+{ name: 'lua-icon', match: [ '.rbxs' ] }
+{ name: 'lua-icon', match: [ '.wlua' ] }
+{ name: 'checklist-icon', match: [ 'Makefile', '^makefile' ] }
+{ name: 'checklist-icon',
+  match: [ '.(?:mk', 'mak', 'make)$', '^mkfile' ] }
+{ name: 'checklist-icon', match: [ 'BSDmakefile$', '\\.am' ] }
+{ name: 'checklist-icon', match: [ 'GNUmakefile' ] }
+{ name: 'checklist-icon', match: [ 'Kbuild' ] }
+{ name: 'checklist-icon', match: [ '.bb' ] }
+{ name: 'checklist-icon', match: [ 'DEPS' ] }
+{ name: 'checklist-icon', match: [ '.mms' ] }
+{ name: 'checklist-icon', match: [ '.mmk' ] }
+{ name: 'checklist-icon', match: [ '.pri' ] }
+{ name: 'mako-icon', match: [ '.mak?o' ] }
+{ name: 'manpage-icon',
+  match:
+   [ '.(?:1(?:[bcmsx]',
+     'has',
+     'in)?',
+     '[24568]',
+     '3(?:avl',
+     'bsm',
+     '3c',
+     'in',
+     'm',
+     'qt',
+     'x)?',
+     '7(?:d',
+     'fs',
+     'i',
+     'ipp',
+     'm',
+     'p)?',
+     '9[efps]?',
+     'chem',
+     'eqn',
+     'groff',
+     'man',
+     'mandoc',
+     'mdoc',
+     'me',
+     'mom',
+     'n',
+     'nroff',
+     'pic',
+     'tmac',
+     'tmac-u',
+     'tr',
+     'troff)' ] }
+{ name: 'manpage-icon',
+  match: [ '.(?:rnh', 'rno', 'roff', 'run', 'runoff)' ] }
+{ name: 'mapbox-icon', match: [ '.mss' ] }
+{ name: 'markdown-icon',
+  match:
+   [ '.(?:md',
+     'mdown',
+     'markdown',
+     'mkd',
+     'mkdown',
+     'mkdn',
+     'rmd',
+     'ron)' ] }
+{ name: 'mathematica-icon',
+  match: [ '.mathematica$', '\\.nbp' ] }
+{ name: 'mathematica-icon', match: [ '.cdf' ] }
+{ name: 'mathematica-icon', match: [ '.ma' ] }
+{ name: 'mathematica-icon', match: [ '.mt' ] }
+{ name: 'mathematica-icon', match: [ '.nb' ] }
+{ name: 'mathematica-icon', match: [ '.wl' ] }
+{ name: 'mathematica-icon', match: [ '.wlt' ] }
+{ name: 'matlab-icon', match: [ '.matlab' ] }
+{ name: 'max-icon', match: [ '.maxpat' ] }
+{ name: 'max-icon', match: [ '.maxhelp' ] }
+{ name: 'max-icon', match: [ '.maxproj' ] }
+{ name: 'max-icon', match: [ '.mxt' ] }
+{ name: 'max-icon', match: [ '.pat' ] }
+{ name: 'maxscript-icon', match: [ '.ms' ] }
+{ name: 'maxscript-icon', match: [ '.mcr' ] }
+{ name: 'maxscript-icon', match: [ '.mce' ] }
+{ name: 'maxscript-icon', match: [ '.max' ] }
+{ name: 'maxscript-icon', match: [ '.3ds' ] }
+{ name: 'maya-icon', match: [ '.mb' ] }
+{ name: 'maya-icon', match: [ '.mel' ] }
+{ name: 'maya-icon', match: [ '.mcf[ip]' ] }
+{ name: 'mediawiki-icon', match: [ '.mediawiki' ] }
+{ name: 'mediawiki-icon', match: [ '.wiki' ] }
+{ name: 'bullhorn-icon', match: [ '\\.mention-bot' ] }
+{ name: 'mercury-icon', match: [ '.moo' ] }
+{ name: 'metal-icon', match: [ '.metal' ] }
+{ name: 'access-icon', match: [ '.accda' ] }
+{ name: 'access-icon', match: [ '.accdb' ] }
+{ name: 'access-icon', match: [ '.accde' ] }
+{ name: 'access-icon', match: [ '.accdr' ] }
+{ name: 'access-icon', match: [ '.accdt' ] }
+{ name: 'access-icon', match: [ '.adn$', '\\.laccdb' ] }
+{ name: 'access-icon', match: [ '.mdw' ] }
+{ name: 'excel-icon', match: [ '.xls' ] }
+{ name: 'excel-icon', match: [ '.xlsx' ] }
+{ name: 'excel-icon', match: [ '.xlsm' ] }
+{ name: 'excel-icon', match: [ '.xlsb' ] }
+{ name: 'excel-icon', match: [ '.xlt' ] }
+{ name: 'onenote-icon', match: [ '.one' ] }
+{ name: 'powerpoint-icon', match: [ '.pps' ] }
+{ name: 'powerpoint-icon', match: [ '.ppsx' ] }
+{ name: 'powerpoint-icon', match: [ '.ppt' ] }
+{ name: 'powerpoint-icon', match: [ '.pptx' ] }
+{ name: 'powerpoint-icon', match: [ '.potm' ] }
+{ name: 'powerpoint-icon', match: [ '.mpp' ] }
+{ name: 'word-icon', match: [ '.doc' ] }
+{ name: 'word-icon', match: [ '.docx' ] }
+{ name: 'word-icon', match: [ '.docm' ] }
+{ name: 'word-icon', match: [ '.docxml' ] }
+{ name: 'word-icon', match: [ '.dotm' ] }
+{ name: 'word-icon', match: [ '.dotx' ] }
+{ name: 'word-icon', match: [ '.wri' ] }
+{ name: 'minecraft-icon', match: [ 'mcmod\\.info' ] }
+{ name: 'mirah-icon', match: [ '.dr?uby' ] }
+{ name: 'mirah-icon', match: [ '.mir(?:ah)?' ] }
+{ name: 'model-icon', match: [ '.obj' ] }
+{ name: 'model-icon', match: [ '.mtl' ] }
+{ name: 'model-icon', match: [ '.stl' ] }
+{ name: 'model-icon', match: [ '.u3d' ] }
+{ name: 'circle-icon', match: [ '.mo' ] }
+{ name: 'modula2-icon', match: [ '.mod' ] }
+{ name: 'modula2-icon', match: [ '.def' ] }
+{ name: 'modula2-icon', match: [ '.m2' ] }
+{ name: 'monkey-icon', match: [ '.monkey' ] }
+{ name: 'moon-icon', match: [ '.moon' ] }
+{ name: 'mruby-icon', match: [ '.mrb' ] }
+{ name: 'msql-icon', match: [ '.dsql' ] }
+{ name: 'mupad-icon', match: [ '.mu' ] }
+{ name: 'music-icon', match: [ '.chord' ] }
+{ name: 'music-icon', match: [ '.midi?' ] }
+{ name: 'music-icon', match: [ '.ly' ] }
+{ name: 'music-icon', match: [ '.ily' ] }
+{ name: 'music-icon', match: [ '.pd' ] }
+{ name: 'mustache-icon',
+  match: [ '.(?:hbs', 'handlebars', 'mustache)' ] }
+{ name: 'nant-icon', match: [ '.build' ] }
+{ name: 'earth-icon', match: [ '.ncl' ] }
+{ name: 'neko-icon', match: [ '.neko' ] }
+{ name: 'amx-icon', match: [ '.axs' ] }
+{ name: 'amx-icon', match: [ '.axi' ] }
+{ name: 'netlogo-icon', match: [ '.nlogo' ] }
+{ name: 'nginx-icon', match: [ '.nginxconf' ] }
+{ name: 'nib-icon', match: [ '.nib' ] }
+{ name: 'nimrod-icon', match: [ '.nim(?:rod)?' ] }
+{ name: 'shuriken-icon', match: [ '.ninja' ] }
+{ name: 'nit-icon', match: [ '.nit' ] }
+{ name: 'nix-icon', match: [ '.nix' ] }
+{ name: 'nmap-icon', match: [ '.nse' ] }
+{ name: 'node-icon', match: [ '.njs$', '\\.nvmrc' ] }
+{ name: 'node-icon', match: [ '.node-version' ] }
+{ name: 'nsis-icon', match: [ '.nsi' ] }
+{ name: 'nsis-icon', match: [ '.nsh' ] }
+{ name: 'recycle-icon', match: [ '.nu' ] }
+{ name: 'recycle-icon', match: [ 'Nukefile' ] }
+{ name: 'nuget-icon', match: [ '.nuspec' ] }
+{ name: 'nuget-icon', match: [ '.pkgproj' ] }
+{ name: 'numpy-icon', match: [ '.numpy' ] }
+{ name: 'numpy-icon', match: [ '.numpyw' ] }
+{ name: 'numpy-icon', match: [ '.numsc' ] }
+{ name: 'nunjucks-icon', match: [ '.(?:nunjucks', 'njk)' ] }
+{ name: 'objc-icon', match: [ '.mm?' ] }
+{ name: 'objc-icon', match: [ '.pch' ] }
+{ name: 'objc-icon', match: [ '.x' ] }
+{ name: 'objj-icon', match: [ '.j' ] }
+{ name: 'objj-icon', match: [ '.sj' ] }
+{ name: 'ocaml-icon', match: [ '.ml' ] }
+{ name: 'ocaml-icon', match: [ '.mli' ] }
+{ name: 'ocaml-icon', match: [ '.eliom' ] }
+{ name: 'ocaml-icon', match: [ '.eliomi' ] }
+{ name: 'ocaml-icon', match: [ '.ml4' ] }
+{ name: 'ocaml-icon', match: [ '.mll' ] }
+{ name: 'ocaml-icon', match: [ '.mly' ] }
+{ name: 'ooc-icon', match: [ '.ooc' ] }
+{ name: 'opa-icon', match: [ '.opa' ] }
+{ name: 'opencl-icon', match: [ '.opencl' ] }
+{ name: 'progress-icon', match: [ '.p' ] }
+{ name: 'openoffice-icon', match: [ '.odt' ] }
+{ name: 'openoffice-icon', match: [ '.ott' ] }
+{ name: 'openoffice-icon', match: [ '.fodt' ] }
+{ name: 'openoffice-icon', match: [ '.ods' ] }
+{ name: 'openoffice-icon', match: [ '.ots' ] }
+{ name: 'openoffice-icon', match: [ '.fods' ] }
+{ name: 'openoffice-icon', match: [ '.odp' ] }
+{ name: 'openoffice-icon', match: [ '.otp' ] }
+{ name: 'openoffice-icon', match: [ '.fodp' ] }
+{ name: 'openoffice-icon', match: [ '.odg' ] }
+{ name: 'openoffice-icon', match: [ '.otg' ] }
+{ name: 'openoffice-icon', match: [ '.fodg' ] }
+{ name: 'openoffice-icon', match: [ '.odf' ] }
+{ name: 'openoffice-icon', match: [ '.odb' ] }
+{ name: 'scad-icon', match: [ '.scad' ] }
+{ name: 'scad-icon', match: [ '.jscad' ] }
+{ name: 'org-icon', match: [ '.org' ] }
+{ name: 'osx-icon', match: [ '.dmg' ] }
+{ name: 'ox-icon', match: [ '.ox' ] }
+{ name: 'ox-icon', match: [ '.oxh' ] }
+{ name: 'ox-icon', match: [ '.oxo' ] }
+{ name: 'oxygene-icon', match: [ '.oxygene' ] }
+{ name: 'oz-icon', match: [ '.oz' ] }
+{ name: 'pan-icon', match: [ '.pan' ] }
+{ name: 'papyrus-icon', match: [ '.psc' ] }
+{ name: 'parrot-icon', match: [ '.parrot' ] }
+{ name: 'parrot-icon', match: [ '.pasm' ] }
+{ name: 'parrot-icon', match: [ '.pir' ] }
+{ name: 'pascal-icon', match: [ '.pas(?:cal)?' ] }
+{ name: 'pascal-icon', match: [ '.dfm' ] }
+{ name: 'pascal-icon', match: [ '.dpr' ] }
+{ name: 'pascal-icon', match: [ '.lpr' ] }
+{ name: 'patch-icon', match: [ '.patch' ] }
+{ name: 'pawn-icon', match: [ '.pwn' ] }
+{ name: 'icon-file-pdf', match: [ '.pdf' ] }
+{ name: 'perl-icon', match: [ '.p(?:er)?l$', '\\.t' ] }
+{ name: 'perl-icon', match: [ '.ph' ] }
+{ name: 'perl-icon', match: [ '.plx' ] }
+{ name: 'perl-icon', match: [ '.pm' ] }
+{ name: 'perl-icon', match: [ '.(?:psgi', 'xs)' ] }
+{ name: 'perl6-icon', match: [ '.pl6' ] }
+{ name: 'perl6-icon', match: [ '.[tp]6$', '\\.6pl' ] }
+{ name: 'perl6-icon', match: [ '.(?:pm6', 'p6m)' ] }
+{ name: 'perl6-icon', match: [ '.6pm' ] }
+{ name: 'perl6-icon', match: [ '.nqp' ] }
+{ name: 'perl6-icon', match: [ '.p6l' ] }
+{ name: 'perl6-icon', match: [ '.pod6' ] }
+{ name: 'perl6-icon', match: [ 'Rexfile' ] }
+{ name: 'phalcon-icon', match: [ '.volt' ] }
+{ name: 'php-icon', match: [ '.php(?:[st\\d]', '_cs)?' ] }
+{ name: 'php-icon', match: [ 'Phakefil' ] }
+{ name: 'pickle-icon', match: [ '.pkl' ] }
+{ name: 'pike-icon', match: [ '.pike' ] }
+{ name: 'pike-icon', match: [ '.pmod' ] }
+{ name: 'sql-icon',
+  match: [ '.(?:pls', 'pck', 'pks', 'plb', 'plsql', 'pkb)' ] }
+{ name: 'pod-icon', match: [ '.pod' ] }
+{ name: 'pogo-icon', match: [ '.pogo' ] }
+{ name: 'pony-icon', match: [ '.pony' ] }
+{ name: 'postcss-icon', match: [ '.p(?:ost)?css' ] }
+{ name: 'postcss-icon', match: [ '.sss' ] }
+{ name: 'postcss-icon', match: [ '.postcssrc' ] }
+{ name: 'postscript-icon', match: [ '.ps' ] }
+{ name: 'postscript-icon', match: [ '.eps' ] }
+{ name: 'postscript-icon', match: [ '.pfa' ] }
+{ name: 'postscript-icon', match: [ '.afm' ] }
+{ name: 'povray-icon', match: [ '.pov' ] }
+{ name: 'powerbuilder-icon', match: [ '.pbl$', '\\.sra' ] }
+{ name: 'powerbuilder-icon', match: [ '.pbt' ] }
+{ name: 'powerbuilder-icon', match: [ '.srw' ] }
+{ name: 'powerbuilder-icon', match: [ '.sru' ] }
+{ name: 'powerbuilder-icon', match: [ '.srp' ] }
+{ name: 'powerbuilder-icon', match: [ '.srj' ] }
+{ name: 'powershell-icon', match: [ '.ps1' ] }
+{ name: 'powershell-icon', match: [ '.psd1' ] }
+{ name: 'powershell-icon', match: [ '.psm1' ] }
+{ name: 'powershell-icon', match: [ '.ps1xml' ] }
+{ name: 'print-icon', match: [ '.ppd' ] }
+{ name: 'processing-icon', match: [ '.pde' ] }
+{ name: 'prolog-icon', match: [ '.pro' ] }
+{ name: 'prolog-icon', match: [ '.prolog' ] }
+{ name: 'prolog-icon', match: [ '.yap' ] }
+{ name: 'propeller-icon', match: [ '.spin' ] }
+{ name: 'pug-icon', match: [ '.pug' ] }
+{ name: 'puppet-icon', match: [ '.pp' ] }
+{ name: 'puppet-icon', match: [ 'odulefile' ] }
+{ name: 'purebasic-icon', match: [ '.pb' ] }
+{ name: 'purebasic-icon', match: [ '.pbi' ] }
+{ name: 'purescript-icon', match: [ '.purs' ] }
+{ name: 'python-icon',
+  match:
+   [ '.py$',
+     '\\.bzl$',
+     '\\.py3$',
+     '\\.?(?:pypirc',
+     'pythonrc',
+     'python-venv)' ] }
+{ name: 'python-icon', match: [ '.ipy' ] }
+{ name: 'python-icon',
+  match: [ '.isolate$', '\\.gypi$', '\\.pyt' ] }
+{ name: 'python-icon', match: [ '.pep$', '\\.pyde' ] }
+{ name: 'python-icon', match: [ '.gyp' ] }
+{ name: 'python-icon', match: [ '.pyp' ] }
+{ name: 'python-icon', match: [ '.pyw' ] }
+{ name: 'python-icon', match: [ '.tac' ] }
+{ name: 'python-icon', match: [ '.wsgi' ] }
+{ name: 'python-icon', match: [ '.xpy' ] }
+{ name: 'python-icon', match: [ '.rpy' ] }
+{ name: 'python-icon',
+  match: [ '(?:BUCK', 'BUILD', 'SConstruct', 'SConscript)' ] }
+{ name: 'python-icon',
+  match: [ '(?:Snakefile', 'WATCHLISTS)' ] }
+{ name: 'python-icon', match: [ 'wscript' ] }
+{ name: 'r-icon', match: [ '.(?:r', 'Rprofile', 'rsx', 'rd)' ] }
+{ name: 'racket-icon', match: [ '.rkt' ] }
+{ name: 'racket-icon', match: [ '.rktd' ] }
+{ name: 'racket-icon', match: [ '.rktl' ] }
+{ name: 'racket-icon', match: [ '.scrbl' ] }
+{ name: 'raml-icon', match: [ '.raml' ] }
+{ name: 'rascal-icon', match: [ '.rsc' ] }
+{ name: 'rdoc-icon', match: [ '.rdoc' ] }
+{ name: 'xojo-icon', match: [ '.rbbas' ] }
+{ name: 'xojo-icon', match: [ '.rbfrm' ] }
+{ name: 'xojo-icon', match: [ '.rbmnu' ] }
+{ name: 'xojo-icon', match: [ '.rbres' ] }
+{ name: 'xojo-icon', match: [ '.rbtbar' ] }
+{ name: 'xojo-icon', match: [ '.rbuistate' ] }
+{ name: 'reason-icon', match: [ '.re' ] }
+{ name: 'reason-icon', match: [ '.rei' ] }
+{ name: 'rebol-icon', match: [ '.reb(?:ol)?' ] }
+{ name: 'rebol-icon', match: [ '.r2' ] }
+{ name: 'rebol-icon', match: [ '.r3' ] }
+{ name: 'red-icon', match: [ '.red' ] }
+{ name: 'red-icon', match: [ '.reds' ] }
+{ name: 'red-hat-icon', match: [ '.rpm' ] }
+{ name: 'red-hat-icon', match: [ '.spec' ] }
+{ name: 'regex-icon', match: [ '.regexp?' ] }
+{ name: 'android-icon', match: [ '.rsh' ] }
+{ name: 'rst-icon', match: [ '.re?st(?:\\.txt)?' ] }
+{ name: 'rexx-icon', match: [ '.rexx?' ] }
+{ name: 'rexx-icon', match: [ '.pprx' ] }
+{ name: 'riot-icon', match: [ '.tag' ] }
+{ name: 'robot-icon', match: [ '.robot' ] }
+{ name: 'clojure-icon', match: [ '.rg' ] }
+{ name: 'rss-icon', match: [ '.rss' ] }
+{ name: 'ruby-icon',
+  match:
+   [ '.(?:rb',
+     'ru',
+     'ruby',
+     'erb',
+     'gemspec',
+     'god',
+     'mspec',
+     'pluginspec',
+     'podspec',
+     'rabl',
+     'rake',
+     'opal)$',
+     '^\\.?(?:irbrc',
+     'gemrc',
+     'pryrc',
+     'rspec',
+     'ruby-(?:gemset',
+     'version))' ] }
+{ name: 'ruby-icon',
+  match:
+   [ '(?:Appraisals',
+     '(?:Rake',
+     'Gem',
+     '[bB]uild',
+     'Berks',
+     'Cap',
+     'Danger',
+     'Deliver',
+     'Fast',
+     'Guard',
+     'Jar',
+     'Maven',
+     'Pod',
+     'Puppet',
+     'Snap)file(?:\\.lock)?)$',
+     '^rails' ] }
+{ name: 'ruby-icon',
+  match: [ '.(?:jbuilder', 'rbuild', 'rb[wx]', 'builder)' ] }
+{ name: 'ruby-icon', match: [ '.watchr' ] }
+{ name: 'rust-icon', match: [ '.rs' ] }
+{ name: 'rust-icon', match: [ '.rlib' ] }
+{ name: 'sage-icon', match: [ '.sage' ] }
+{ name: 'sage-icon', match: [ '.sagews' ] }
+{ name: 'saltstack-icon', match: [ '.sls' ] }
+{ name: 'sas-icon', match: [ '.sas' ] }
+{ name: 'sass-icon', match: [ '.scss' ] }
+{ name: 'sass-icon', match: [ '.sass' ] }
+{ name: 'sbt-icon', match: [ '.sbt' ] }
+{ name: 'scala-icon', match: [ '.(?:sc', 'scala)' ] }
+{ name: 'scheme-icon', match: [ '.scm' ] }
+{ name: 'scheme-icon', match: [ '.sld' ] }
+{ name: 'scheme-icon', match: [ '.sps' ] }
+{ name: 'scilab-icon', match: [ '.sci' ] }
+{ name: 'scilab-icon', match: [ '.sce' ] }
+{ name: 'scilab-icon', match: [ '.tst' ] }
+{ name: 'secret-icon', match: [ '.secret' ] }
+{ name: 'self-icon', match: [ '.self' ] }
+{ name: 'graph-icon', match: [ '.csv' ] }
+{ name: 'graph-icon', match: [ '.(?:tab', 'tsv)' ] }
+{ name: 'graph-icon', match: [ '.dif' ] }
+{ name: 'graph-icon', match: [ '.slk' ] }
+{ name: 'sf-icon', match: [ '.sfproj' ] }
+{ name: 'terminal-icon',
+  match:
+   [ '.(?:sh', 'rc', 'bats', 'bash', 'tool', 'install', 'command)' ] }
+{ name: 'terminal-icon',
+  match:
+   [ '(?:\\.?bash(?:rc',
+     '[-_]?(?:profile',
+     'login',
+     'logout',
+     'history',
+     'prompt))',
+     '_osc',
+     'config',
+     'install-sh',
+     'PKGBUILD)' ] }
+{ name: 'terminal-icon', match: [ '.ksh' ] }
+{ name: 'terminal-icon', match: [ '.sh-session' ] }
+{ name: 'terminal-icon',
+  match:
+   [ '.zsh(?:-theme',
+     '_history)?$',
+     '^\\.?(?:antigen',
+     'zpreztorc',
+     'zlogin',
+     'zlogout',
+     'zprofile',
+     'zshenv',
+     'zshrc)$',
+     '\\.tmux' ] }
+{ name: 'terminal-icon',
+  match: [ '.fish$', '^\\.fishrc$', '\\.tcsh' ] }
+{ name: 'terminal-icon', match: [ '.inputrc' ] }
+{ name: 'terminal-icon',
+  match:
+   [ '(?:configure',
+     'config\\.(?:guess',
+     'rpath',
+     'status',
+     'sub)',
+     'depcomp',
+     'libtool',
+     'compile)' ] }
+{ name: 'terminal-icon',
+  match:
+   [ '\\/(?:private\\/)?etc\\/(?:[^\\/]+\\/)*(?:profile$',
+     'nanorc$',
+     'rc\\.',
+     'csh\\.' ] }
+{ name: 'terminal-icon', match: [ '.csh' ] }
+{ name: 'shen-icon', match: [ '.shen' ] }
+{ name: 'shopify-icon', match: [ '.liquid' ] }
+{ name: 'sigils-icon', match: [ '.sigils' ] }
+{ name: 'silverstripe-icon', match: [ '.ss' ] }
+{ name: 'sketch-icon', match: [ '.sketch' ] }
+{ name: 'slash-icon', match: [ '.sl' ] }
+{ name: 'android-icon', match: [ '.smali' ] }
+{ name: 'smarty-icon', match: [ '.tpl' ] }
+{ name: 'snyk-icon', match: [ '.snyk' ] }
+{ name: 'clojure-icon', match: [ '.(?:sma', 'sp)' ] }
+{ name: 'sparql-icon', match: [ '.sparql' ] }
+{ name: 'sparql-icon', match: [ '.rq' ] }
+{ name: 'sqf-icon', match: [ '.sqf' ] }
+{ name: 'sqf-icon', match: [ '.hqf' ] }
+{ name: 'sql-icon', match: [ '.(?:my)?sql' ] }
+{ name: 'sql-icon', match: [ '.ddl' ] }
+{ name: 'sql-icon', match: [ '.udf' ] }
+{ name: 'sql-icon', match: [ '.viw' ] }
+{ name: 'sql-icon', match: [ '.prc' ] }
+{ name: 'sql-icon', match: [ '.db2' ] }
+{ name: 'sqlite-icon', match: [ '.sqlite' ] }
+{ name: 'sqlite-icon', match: [ '.sqlite3' ] }
+{ name: 'sqlite-icon', match: [ '.db' ] }
+{ name: 'sqlite-icon', match: [ '.db3' ] }
+{ name: 'squirrel-icon', match: [ '.nut' ] }
+{ name: 'key-icon', match: [ '.pub' ] }
+{ name: 'key-icon', match: [ '.pem' ] }
+{ name: 'key-icon', match: [ '.key$', '\\.crt' ] }
+{ name: 'key-icon', match: [ '.der' ] }
+{ name: 'key-icon', match: [ 'id_rs' ] }
+{ name: 'key-icon',
+  match: [ '.glyphs\\d*License$', '^git-credential-osxkeychain' ] }
+{ name: 'key-icon', match: [ '(?:master\\.)?passwd' ] }
+{ name: 'stan-icon', match: [ '.stan' ] }
+{ name: 'stata-icon', match: [ '.do' ] }
+{ name: 'stata-icon', match: [ '.ado' ] }
+{ name: 'stata-icon', match: [ '.doh' ] }
+{ name: 'stata-icon', match: [ '.ihlp' ] }
+{ name: 'stata-icon', match: [ '.mata' ] }
+{ name: 'stata-icon', match: [ '.matah' ] }
+{ name: 'stata-icon', match: [ '.sthlp' ] }
+{ name: 'storyist-icon', match: [ '.story' ] }
+{ name: 'strings-icon', match: [ '.strings' ] }
+{ name: 'stylus-icon', match: [ '.styl' ] }
+{ name: 'sublime-icon',
+  match:
+   [ '.(?:stTheme',
+     'sublime[-_](?:build',
+     'commands',
+     'completions',
+     'keymap',
+     'macro',
+     'menu',
+     'mousemap',
+     'project',
+     'settings',
+     'theme',
+     'workspace',
+     'metrics',
+     'session',
+     'snippet))' ] }
+{ name: 'sublime-icon', match: [ '.sublime-syntax' ] }
+{ name: 'scd-icon', match: [ '.scd' ] }
+{ name: 'svg-icon', match: [ '.svg' ] }
+{ name: 'swift-icon', match: [ '.swift' ] }
+{ name: 'sysverilog-icon', match: [ '.sv' ] }
+{ name: 'sysverilog-icon', match: [ '.svh' ] }
+{ name: 'sysverilog-icon', match: [ '.vh' ] }
+{ name: 'tag-icon', match: [ '.?c?tags' ] }
+{ name: 'tag-icon', match: [ '.gemtag' ] }
+{ name: 'tcl-icon', match: [ '.tcl' ] }
+{ name: 'tcl-icon', match: [ '.adp' ] }
+{ name: 'tcl-icon', match: [ '.tm' ] }
+{ name: 'coffee-icon', match: [ '.tea' ] }
+{ name: 'tt-icon', match: [ '.tt2?' ] }
+{ name: 'tt-icon', match: [ '.tt3' ] }
+{ name: 'tern-icon', match: [ '.tern-project' ] }
+{ name: 'terraform-icon', match: [ '.tf(?:vars)?' ] }
+{ name: 'tex-icon', match: [ '.tex$', '\\.ltx$', '\\.lbx' ] }
+{ name: 'tex-icon', match: [ '.aux$', '\\.ins' ] }
+{ name: 'tex-icon', match: [ '.sty$', '\\.texi' ] }
+{ name: 'tex-icon', match: [ '.dtx' ] }
+{ name: 'tex-icon',
+  match: [ '.cls$', '\\.mkiv$', '\\.mkvi$', '\\.mkii' ] }
+{ name: 'icon-file-text',
+  match: [ '.te?xt$', '\\.irclog$', '\\.uot' ] }
+{ name: 'icon-file-text',
+  match: [ '.log$', '^Terminal[-_\\s]Saved[-_\\s]Output$', '\\.brf' ] }
+{ name: 'icon-file-text',
+  match: [ '.git[\\/\\\\]description' ] }
+{ name: 'icon-file-text',
+  match:
+   [ '.err$',
+     '\\.no$',
+     '^(?:bug-report',
+     'fdl',
+     'for-release',
+     'tests)' ] }
+{ name: 'icon-file-text', match: [ '.rtf$', '\\.uof' ] }
+{ name: 'icon-file-text', match: [ '.i?nfo' ] }
+{ name: 'icon-file-text', match: [ '.abt$', '\\.sub' ] }
+{ name: 'icon-file-text', match: [ '.ans' ] }
+{ name: 'icon-file-text', match: [ '.etx' ] }
+{ name: 'icon-file-text', match: [ '.msg' ] }
+{ name: 'icon-file-text', match: [ '.srt$', '\\.uop' ] }
+{ name: 'icon-file-text', match: [ '.(?:utxt', 'utf8)' ] }
+{ name: 'icon-file-text', match: [ '.weechatlog$', '\\.uos' ] }
+{ name: 'textile-icon', match: [ '.textile' ] }
+{ name: 'textmate-icon', match: [ '.tmcg' ] }
+{ name: 'textmate-icon', match: [ '.tmLanguage' ] }
+{ name: 'textmate-icon', match: [ '.tmCommand' ] }
+{ name: 'textmate-icon', match: [ '.tmPreferences' ] }
+{ name: 'textmate-icon', match: [ '.tmSnippet' ] }
+{ name: 'textmate-icon', match: [ '.tmTheme' ] }
+{ name: 'textmate-icon', match: [ '.tmMacro' ] }
+{ name: 'textmate-icon', match: [ '.yaml-tmlanguage' ] }
+{ name: 'textmate-icon', match: [ '.JSON-tmLanguage' ] }
+{ name: 'thor-icon', match: [ '.thor' ] }
+{ name: 'thor-icon', match: [ 'Thorfile' ] }
+{ name: 'tsx-icon', match: [ '.tsx' ] }
+{ name: 'turing-icon', match: [ '.tu' ] }
+{ name: 'twig-icon', match: [ '.twig' ] }
+{ name: 'txl-icon', match: [ '.txl' ] }
+{ name: 'ts-icon', match: [ '.ts' ] }
+{ name: 'unity3d-icon', match: [ '.anim' ] }
+{ name: 'unity3d-icon', match: [ '.asset' ] }
+{ name: 'unity3d-icon', match: [ '.mat' ] }
+{ name: 'unity3d-icon', match: [ '.meta' ] }
+{ name: 'unity3d-icon', match: [ '.prefab' ] }
+{ name: 'unity3d-icon', match: [ '.unity' ] }
+{ name: 'unity3d-icon', match: [ '.unityproj' ] }
+{ name: 'uno-icon', match: [ '.uno' ] }
+{ name: 'unreal-icon', match: [ '.uc' ] }
+{ name: 'link-icon', match: [ '.url' ] }
+{ name: 'urweb-icon', match: [ '.ur' ] }
+{ name: 'urweb-icon', match: [ '.urs' ] }
+{ name: 'vagrant-icon', match: [ 'Vagrantfile' ] }
+{ name: 'gnome-icon', match: [ '.vala' ] }
+{ name: 'gnome-icon', match: [ '.vapi' ] }
+{ name: 'varnish-icon', match: [ '.vcl' ] }
+{ name: 'verilog-icon', match: [ '.v' ] }
+{ name: 'verilog-icon', match: [ '.veo' ] }
+{ name: 'vhdl-icon', match: [ '.vhdl' ] }
+{ name: 'vhdl-icon', match: [ '.vhd' ] }
+{ name: 'vhdl-icon', match: [ '.vhf' ] }
+{ name: 'vhdl-icon', match: [ '.vhi' ] }
+{ name: 'vhdl-icon', match: [ '.vho' ] }
+{ name: 'vhdl-icon', match: [ '.vhs' ] }
+{ name: 'vhdl-icon', match: [ '.vht' ] }
+{ name: 'vhdl-icon', match: [ '.vhw' ] }
+{ name: 'video-icon', match: [ '.3gpp?' ] }
+{ name: 'video-icon', match: [ '.(?:mp4', 'm4v', 'h264)' ] }
+{ name: 'video-icon', match: [ '.avi' ] }
+{ name: 'video-icon', match: [ '.mov' ] }
+{ name: 'video-icon', match: [ '.mkv' ] }
+{ name: 'video-icon', match: [ '.flv' ] }
+{ name: 'video-icon', match: [ '.webm' ] }
+{ name: 'video-icon', match: [ '.mpe?g' ] }
+{ name: 'video-icon', match: [ '.(?:asf', 'wmv)' ] }
+{ name: 'video-icon', match: [ '.(?:ogm', 'og[gv])' ] }
+{ name: 'vim-icon', match: [ '.(?:vim', 'n?vimrc)' ] }
+{ name: 'vim-icon', match: [ '[gn_]?vim(?:rc', 'info)' ] }
+{ name: 'vs-icon', match: [ '.(?:vba?', 'fr[mx]', 'bas)' ] }
+{ name: 'vs-icon', match: [ '.vbhtml' ] }
+{ name: 'vs-icon', match: [ '.vbs' ] }
+{ name: 'vs-icon', match: [ '.csproj' ] }
+{ name: 'vs-icon', match: [ '.vbproj' ] }
+{ name: 'vs-icon', match: [ '.vcx?proj' ] }
+{ name: 'vs-icon', match: [ '.vssettings' ] }
+{ name: 'vs-icon', match: [ '.builds' ] }
+{ name: 'vs-icon', match: [ '.sln' ] }
+{ name: 'vue-icon', match: [ '.vue' ] }
+{ name: 'owl-icon', match: [ '.owl' ] }
+{ name: 'windows-icon', match: [ '.bat$', '\\.cmd' ] }
+{ name: 'windows-icon', match: [ '.(?:exe', 'com', 'msi)' ] }
+{ name: 'windows-icon', match: [ '.reg' ] }
+{ name: 'x10-icon', match: [ '.x10' ] }
+{ name: 'x11-icon',
+  match:
+   [ '.X(?:authority',
+     'clients',
+     'initrc',
+     'profile',
+     'resources',
+     'session-errors',
+     'screensaver)' ] }
+{ name: 'xmos-icon', match: [ '.xc' ] }
+{ name: 'appstore-icon',
+  match:
+   [ '.(?:pbxproj',
+     'pbxuser',
+     'mode\\dv\\3',
+     'xcplugindata',
+     'xcrequiredplugins)' ] }
+{ name: 'xojo-icon', match: [ '.xojo_code' ] }
+{ name: 'xojo-icon', match: [ '.xojo_menu' ] }
+{ name: 'xojo-icon', match: [ '.xojo_report' ] }
+{ name: 'xojo-icon', match: [ '.xojo_script' ] }
+{ name: 'xojo-icon', match: [ '.xojo_toolbar' ] }
+{ name: 'xojo-icon', match: [ '.xojo_window' ] }
+{ name: 'xpages-icon', match: [ '.xsp-config' ] }
+{ name: 'xpages-icon', match: [ '.xsp\\.metadata' ] }
+{ name: 'xmos-icon', match: [ '.xpl' ] }
+{ name: 'xmos-icon', match: [ '.xproc' ] }
+{ name: 'sql-icon',
+  match: [ '.(?:xquery', 'xq', 'xql', 'xqm', 'xqy)' ] }
+{ name: 'xtend-icon', match: [ '.xtend' ] }
+{ name: 'yang-icon', match: [ '.yang' ] }
+{ name: 'zbrush-icon', match: [ '.zpr' ] }
+{ name: 'zephir-icon', match: [ '.zep' ] }
+{ name: 'zimpl-icon', match: [ '.(?:zimpl', 'zmpl', 'zpl)' ] }
+{ name: 'apple-icon', match: [ 'com\\.apple\\' ] }
+{ name: 'apache-icon', match: [ 'httpd\\.con' ] }
+{ name: 'checklist-icon', match: [ 'OD' ] }
+{ name: 'config-icon',
+  match: [ 'onfig', 'settings', 'option', 'pre' ] }
+{ name: 'doge-icon', match: [ '.djs' ] }
+{ name: 'gear-icon', match: [ '\\' ] }
+{ name: 'book-icon',
+  match:
+   [ 'b(?:changelog',
+     'copying(?:v?\\d)?',
+     'install',
+     'read[-_]?me)\\b',
+     '^licen[sc]es?[-._' ] }
+{ name: 'book-icon', match: [ 'news(?:[-_.]?[-\\d]+)?' ] }
+{ name: 'v8-icon',
+  match: [ '(?:[dv]8', 'v8[-_.][^.]*', 'mksnapshot', 'mkpeephole)' ] }

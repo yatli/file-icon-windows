@@ -30,6 +30,7 @@
     "file-icons-js": "1.0.0",
     "dom-to-image": "*",
     "file-saver": "*",
-    "png-to-ico": "*"
+    "png-to-ico": "*",
+    "win32-api": "*"
   }
 }
