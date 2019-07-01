@@ -1,0 +1,35 @@
+{
+  "name": "file-icons-win",
+  "version": "1.0.0",
+  "description": "generate .ico files from file-icons-js and create Windows file associations",
+  "main": "out/index.js",
+  "files": [
+    "out"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "node": "node out/index.js",
+    "electron": "electron ."
+  },
+  "keywords": [
+    "icon",
+    "Windows"
+  ],
+  "author": "yatli",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^5.0.5"
+  },
+  "dependencies": {
+    "@types/node": "^10.3.3",
+    "@types/file-saver": "*",
+    "@types/dom-to-image": "*",
+    "typescript": "^3.0.3",
+    "file-icons-js": "1.0.0",
+    "dom-to-image": "*",
+    "file-saver": "*",
+    "png-to-ico": "*"
+  }
+}
