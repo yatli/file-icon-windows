@@ -27,6 +27,7 @@
     "@types/file-saver": "*",
     "@types/dom-to-image": "*",
     "typescript": "^3.0.3",
+    "convex-hull": "*",
     "file-icons-js": "1.0.0",
     "dom-to-image": "*",
     "file-saver": "*",

@@ -29,7 +29,7 @@ async function main() {
         ".bat", ".cmd", ".sh", ".reg", 
         ".bin", ".dat",
         ".bison", ".l", ".y",
-        ".c", ".cxx", ".cpp", ".h", ".hpp", ".cc", ".hh", ".in", ".cmake", "CMakeLists.txt", "Makefile", ".mk",
+        ".c", ".cxx", ".cpp", ".h", ".hpp", ".cc", ".hh", ".in", ".cmake", "CMakeLists.txt", "Makefile", ".mk", ".clang-format",
         ".coq", 
         ".cs", ".fs", ".vb", ".rc", ".csproj", ".fsproj", ".vcxproj", ".vbproj", ".sln", ".props", ".targets", ".csx", ".fsx", ".nuspec",
         ".css", ".html", ".htm", ".json", ".less", ".scss", ".styl",
@@ -42,22 +42,27 @@ async function main() {
         ".ml", ".hs",
         ".ps1", ".psd1", ".psm1", ".ps1xml",
         ".pub", ".key",
-        ".py", ".ipy", ".ipynb", ".pl", ".rb", 
-        ".rs", ".go", ".pas", ".vala", ".v", ".vhdl", 
+        ".py", ".ipy", ".ipynb", ".pl", ".rb", ".lua", ".rs", ".go", ".pas", ".vala", 
+        ".v", ".vhdl", 
         ".scm", ".rkt", ".cl", ".el", ".lisp", ".clj", ".sexp",
         ".settings", ".config", ".reg", ".yml", ".conf", ".metadata", ".ini",
         ".sql", ".sparql",
         ".svg", 
         ".tex", ".cls", ".ltx", ".aux", ".sty", ".ps", ".cbx", ".bbx", ".bib", ".bst",
         ".tmLanguage",
-        ".ts", ".js", ".js.map", ".coffee", ".re", ".jsx",
+        ".ts", ".js", ".js.map", ".coffee", ".re", ".jsx", ".lock",
         ".vim",
         ".xml", ".xaml", ".xsd", ".gml", 
 
         ".txt",
 
-        ".git", ".gitignore", ".github",
+        ".git", ".gitignore", ".github", ".gitmodules", ".gitconfig", ".gitattributes",
     ]
+
+    // for debug
+    //suffixes = [
+        //".txt", ".txt"
+    //]
 
     let getFileName = function(x: string) {
         if((x[0] !== ".") || (x[0] === x[0].toUpperCase())) return x
