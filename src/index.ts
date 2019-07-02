@@ -41,6 +41,7 @@ function extractIcons() {
         fs.writeFile(fileName, buffer, err => {
             pngToIco(fileName).then((buf: any) => {
                 fs.writeFileSync(fileName + ".ico", buf)
+                fs.unlinkSync(fileName)
             })
         })
     })

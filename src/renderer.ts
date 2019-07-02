@@ -24,14 +24,14 @@ function saveBlob(blob: Blob, fileName: string) {
 async function main() {
 
     let suffixes = [
-        ".asp", ".aspx", "asmx", ".ascx", ".ashx",
+        ".asp", ".asp", ".aspx", ".ascx", ".ashx",
         ".awk", ".gawk", ".mawk", ".nawk", 
-        ".bat", ".cmd", ".sh", ".reg", ".com", ".msi",
+        ".bat", ".cmd", ".sh", ".reg", 
         ".bin", ".dat",
         ".bison", ".l", ".y",
-        ".c", ".c", ".cpp", ".h", ".hpp", ".cc", ".hh", ".in", ".cmake", "CMakeLists.txt", "Makefile", ".mk",
+        ".c", ".cxx", ".cpp", ".h", ".hpp", ".cc", ".hh", ".in", ".cmake", "CMakeLists.txt", "Makefile", ".mk",
         ".coq", 
-        ".cs", ".fs", ".vb", ".rc", ".csproj", ".fsproj", ".vcxproj", ".sln", ".props", ".targets", ".csx", ".fsx", ".nuspec",
+        ".cs", ".fs", ".vb", ".rc", ".csproj", ".fsproj", ".vcxproj", ".vbproj", ".sln", ".props", ".targets", ".csx", ".fsx", ".nuspec",
         ".css", ".html", ".htm", ".json", ".less", ".scss", ".styl",
         ".csv", ".tsv", 
         ".g", ".g4",
@@ -45,8 +45,7 @@ async function main() {
         ".py", ".ipy", ".ipynb", ".pl", ".rb", 
         ".rs", ".go", ".pas", ".vala", ".v", ".vhdl", 
         ".scm", ".rkt", ".cl", ".el", ".lisp", ".clj", ".sexp",
-        ".settings", ".config", ".reg", ".yml", ".conf",
-        ".something_text",
+        ".settings", ".config", ".reg", ".yml", ".conf", ".metadata", ".ini",
         ".sql", ".sparql",
         ".svg", 
         ".tex", ".cls", ".ltx", ".aux", ".sty", ".ps", ".cbx", ".bbx", ".bib", ".bst",
@@ -54,6 +53,10 @@ async function main() {
         ".ts", ".js", ".js.map", ".coffee", ".re", ".jsx",
         ".vim",
         ".xml", ".xaml", ".xsd", ".gml", 
+
+        ".txt",
+
+        ".git", ".gitignore", ".github",
     ]
 
     let getFileName = function(x: string) {
@@ -64,15 +67,19 @@ async function main() {
     for(let x of suffixes) {
         let filename = getFileName(x)
         let class_name = getClassWithColor(filename)
+
+        if (x === ".txt") class_name = "text-icon"
+
         console.log(`${filename} -> ${class_name}`)
         document.body.innerHTML = 
             `<div id="ICON" class="${class_name}" 
-                  style="width: 256px; height: 256px; transform: scale(12.0) translate(47%, 47%)">
+                  style="width: 256px; height: 256px; transform: scale(12.0) translate(47%, 47%); filter: saturate(2.0)">
             </div>`
         let icon = document.getElementById("ICON")
         let blob = await domtoimage.toBlob(icon)
 
-        let savename = `icon_${x}.png`
+
+        let savename = `${x}.png`
         saveBlob(blob, savename)
 
         //saveAs(blob,)
